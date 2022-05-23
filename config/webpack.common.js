@@ -81,7 +81,7 @@ module.exports = {
          },
 
          {
-            test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/i,
+            test: /\.(?:ico|gif|png|jpg|jpeg|webp|avif)$/i,
             type: "asset/resource",
             generator: {
                filename: 'static/media/image/[name][ext]',
