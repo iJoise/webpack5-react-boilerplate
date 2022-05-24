@@ -10,8 +10,8 @@
   "author": "iJoise <kondratevk.1989@gmail.com>",
   "license": "ISC",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js --mode production"
+    "start": "cross-env webpack serve --config config/webpack.dev.js",
+    "build": "cross-env webpack --config config/webpack.prod.js"
   },
   "dependencies": {
     "@types/node": "^16.7.13",
