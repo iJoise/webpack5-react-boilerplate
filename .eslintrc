@@ -1,0 +1,110 @@
+{
+  "env": {
+    "jest": true,
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb",
+    "prettier",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "prettier",
+    "react-hooks",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "no-shadow": "off",
+    "no-alert": "error",
+    "no-debugger": "error",
+    "no-plusplus": "off",
+    "no-unused-vars": "off",
+    "no-magic-numbers": "off",
+    "func-names": "off",
+    "default-param-last": "off",
+    "no-use-before-define": "off",
+    "no-restricted-syntax": "off",
+    "no-param-reassign": [2, { "props": false }],
+    "guard-for-in": "off",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1
+      }
+    ],
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/no-shadow": [
+      "error"
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "error"
+    ],
+    "@typescript-eslint/no-magic-numbers": "off",
+    "@typescript-eslint/no-use-before-define": [
+      "error"
+    ],
+    "prettier/prettier": "error",
+    "react/prop-types": 0,
+    "react/display-name": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/destructuring-assignment": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
+    "no-nested-ternary": "off",
+    "camelcase": "off",
+    "no-promise-executor-return": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".jsx",
+          ".tsx"
+        ]
+      }
+    ],
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "import/order": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": true,
+        "peerDependencies": true
+      }
+    ]
+  },
+  "ignorePatterns": ["dist", "node_modules", "webpack.*", "config/paths.js", "config/utils.js"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "src"
+        ],
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    }
+  }
+}
