@@ -44,6 +44,7 @@ export default App;
    * При коммите запускается ESLint --fix
    * Форматирование кода с помощью Prettier
 ***
+5. React.lazy
    
 ## ToDo
 
