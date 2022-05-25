@@ -1,17 +1,17 @@
 @import "../../../styles/variables";
 
-
-
-.image {
-  height: 200px;
-  width: 200px;
-}
-
 .about {
 
   &__title {
     text-align: center;
     font-size: 55px;
+    color: var(--title-color);
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: 35px;
     color: var(--title-color);
   }
 
@@ -26,13 +26,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
 
-    &:last-child {
-      background-image: url("../../../assets/icons/logo.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 200px 200px;
-    }
+  &__background {
+    margin-top: -20px;
+    background-image: url("../../../assets/icons/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px 200px;
+    height: 100%;
+    width: 100%;
+    animation: App-logo-spin infinite 20s linear;
+  }
+
+  &__image {
+    height: 200px;
+    width: 200px;
+    animation: App-logo-spin infinite 20s linear;
+  }
+
+  &__btn {
+    position: relative;
+    z-index: 1000;
   }
 
   pre {
@@ -40,3 +55,11 @@
   }
 }
 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

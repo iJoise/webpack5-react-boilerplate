@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { getRandomInteger } from "../../../utils";
+import { getRandomInteger } from "../utils";
 
 export const useGenerateColor = () => {
   const [randomColor, setRandomColor] = useState("rgb(129, 178, 154)");

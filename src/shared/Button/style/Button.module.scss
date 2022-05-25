@@ -1,37 +1,31 @@
+@import "../../../styles/mixins";
+
 .button {
   border: none;
   width: 100%;
   max-width: 200px;
+  height: 35px;
+  font-size: 16px;
   -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  background: var(--background-gradient);
+  background-size: 200% 200%;
+  color: white;
+  @include animation-bgc;
+
+  &:active {
+    transform: scale(0.95);
+  }
 
   &:disabled {
     opacity: 0.6;
   }
 
   &__rounded {
-    height: 35px;
     border-radius: 30px;
-    font-size: 16px;
   }
 
   &__default {
-    height: 33px;
     border-radius: 2px;
-    font-size: 14px;
-  }
-
-  &__blue {
-    background: #3D405B;
-    color: white;
-  }
-
-  &__light_blue {
-    background: #D7D8EF;
-    color: #7a4c7e
-  }
-
-  &__pink {
-    background-color: #c7517b;
-    color: white;
   }
 }

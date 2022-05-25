@@ -2,8 +2,8 @@
 
 :root {
   --fontFamily: 'Roboto', sans-serif;
+  --background-gradient: linear-gradient(-45deg, #450920, #a53860, #007ea7, #3d405b);
   --main-text-color: #1c1c1e;
-  --background-color: #3d405b;
   --title-color: #F4F1DE;
   --text-color: #f2cc8f;
 }
@@ -50,7 +50,6 @@ body {
   font-family: var(--fontFamily);
   color: var(--main-text-color);
   font-size: 18px;
-  background-color: var(--background-color);
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
