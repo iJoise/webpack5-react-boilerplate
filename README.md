@@ -1,7 +1,5 @@
 # Бойлерплейт webpack 5 + react + typescript
 
-____
-
 ## Возможности:
 
 1. ___CSS module / Preprocessor___
