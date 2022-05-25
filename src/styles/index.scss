@@ -1,14 +1,11 @@
-:root {
-  --fontFamily: 'Arial', sans-serif;
-  --minWidth: 320px;
-  --maxWidth: 1920;
-  --maxWidthContainer: 1140;
-  --md1: var(--maxWidthContainer) + 12;
-  --md2: 991.98;
-  --md3: 767.98;
-  --md4: 479.98;
+@import "fonts";
 
+:root {
+  --fontFamily: 'Roboto', sans-serif;
   --main-text-color: #1c1c1e;
+  --background-color: #3d405b;
+  --title-color: #F4F1DE;
+  --text-color: #f2cc8f;
 }
 
 * {
@@ -53,7 +50,7 @@ body {
   font-family: var(--fontFamily);
   color: var(--main-text-color);
   font-size: 18px;
-  background-color: #ffff;
+  background-color: var(--background-color);
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

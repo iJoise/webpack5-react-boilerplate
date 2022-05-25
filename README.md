@@ -20,7 +20,6 @@
 ```jsx
 import React from 'react';
 import logo, { ReactComponent as Logo } from '../assets/icons/logo.svg';
-import s from '../styles/app.module.scss';
 
 const App = () => (
         <div>

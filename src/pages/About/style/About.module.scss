@@ -1,0 +1,42 @@
+@import "../../../styles/variables";
+
+
+
+.image {
+  height: 200px;
+  width: 200px;
+}
+
+.about {
+
+  &__title {
+    text-align: center;
+    font-size: 55px;
+    color: var(--title-color);
+  }
+
+  &__body {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+  }
+
+  &__column {
+    flex: 1 1 33.333%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:last-child {
+      background-image: url("../../../assets/icons/logo.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 200px 200px;
+    }
+  }
+
+  pre {
+    color: var(--text-color);
+  }
+}
+

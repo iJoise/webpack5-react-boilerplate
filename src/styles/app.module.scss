@@ -1,12 +1,52 @@
-.app {
-  text-align: center;
+@import "variables";
 
-  &__logo {
-    height: 20vmin;
+.container {
+  width: 100%;
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  @media (max-width: $md1+px) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3+px) {
+    max-width: 478px;
+    padding: 0 20px;
+  }
+  @media (max-width: $md4+px) {
+    padding: 0 15px;
+    max-width: none;
   }
 }
 
-.svg {
-  width: 50px;
-  height: 50px;
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #474973, #456990, #23a6d5, #3d405b);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
