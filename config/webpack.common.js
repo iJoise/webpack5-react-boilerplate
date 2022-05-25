@@ -4,7 +4,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const paths = require('./paths');
-const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
   entry: ['@babel/polyfill', paths.src + '/index.tsx'],
