@@ -5,7 +5,7 @@ ____
 ## Возможности:
 
 1. ___CSS module / Preprocessor___
-    * PostCss
+    * Sass/Scss
     * PostCss
     * autoprefixer
     * Для модулей реализованы имена классов как appName_componentName_hash
