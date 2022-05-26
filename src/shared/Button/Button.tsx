@@ -17,7 +17,7 @@ export const Button: React.FC<SuperButtonPropsType> = React.memo(
       width,
     };
 
-    const finalClassName = `${className} ${s.button} ${
+    const finalClassName = `${className || ""} ${s.button} ${
       rounded ? s.button__rounded : s.button__default
     }`;
 
