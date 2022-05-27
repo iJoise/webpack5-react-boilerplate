@@ -19,7 +19,7 @@
 
 2. ___SVG___
     * Возможность использовать svg как инлайн в css, как путь к картике в теге `<img src=path>` и как ReactComponent
-    * Что бы использовать props `fill="#FA614A"` замените в самом svg на `fill="current"`
+    * Что бы использовать props `fill="#FA614A"` замените в svg `fill="current"`
 
 ```jsx
 import React from 'react';
@@ -41,7 +41,7 @@ export default App;
     * Картинки
         * `ico, gif, png, jpg, jpeg, webp, avif`
     * Шрифты
-        * `woff,woff2, eot. ttf, otf`
+        * `woff, woff2, eot, ttf, otf`
     * Документы
         * `pdf`
 
