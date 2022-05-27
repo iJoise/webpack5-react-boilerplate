@@ -4,3 +4,6 @@ package-lock.json
 yarn.lock
 package.json
 src/assets/
+coverage
+.husky/
+config/

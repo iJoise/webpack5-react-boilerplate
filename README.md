@@ -1,4 +1,5 @@
 # Бойлерплейт webpack 5 + react + typescript
+[![codecov](https://codecov.io/gh/iJoise/webpack5-react-boilerplate/branch/main/graph/badge.svg?token=93NZC7OGWC)](https://codecov.io/gh/iJoise/webpack5-react-boilerplate)
 
 ## Возможности:
 
@@ -45,6 +46,5 @@ export default App;
 ***
 5. React.lazy
    
-## ToDo
-
-      настроить среду тестирования
+***
+6. Тестирование React Testing Library + coverage

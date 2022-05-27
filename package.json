@@ -19,7 +19,8 @@
     "lint": "eslint 'src/'",
     "lint:fix": "eslint --fix src/ --ext .js,.ts,.tsx,.jsx",
     "lint:staged": "lint-staged",
-    "prettier": "prettier --write src/"
+    "prettier": "prettier --write src/",
+    "check:format": "prettier --list-different ."
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
