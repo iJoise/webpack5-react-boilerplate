@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About Page About Page should be render 1`] = `
+<div>
+  <div
+    class="about"
+  >
+    <h1
+      class="about__title"
+    >
+      React Boilerplate
+    </h1>
+    <h2
+      class="about__subtitle"
+    >
+      Happy coding!
+    </h2>
+    <div
+      class="about__body"
+    >
+      <div
+        class="about__column"
+      >
+        <pre>
+          &lt;img src={logo} /&gt;
+        </pre>
+        <img
+          alt="logo"
+          class="about__image"
+          src="[object Object]"
+        />
+      </div>
+      <div
+        class="about__column"
+      >
+        <pre>
+          ReactComponent
+        </pre>
+        <svg
+          class="about__image"
+          data-testid="react-svg"
+          fill="rgb(129, 178, 154)"
+          height="200"
+          width="200"
+        />
+        <button
+          class="about__btn button button__rounded"
+          type="button"
+        >
+          Set color
+        </button>
+      </div>
+      <div
+        class="about__column"
+      >
+        <pre>
+          background-image
+        </pre>
+        <div
+          class="about__background"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

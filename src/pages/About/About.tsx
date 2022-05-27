@@ -20,7 +20,13 @@ export const About = () => {
 
         <div className={s.about__column}>
           <pre>ReactComponent</pre>
-          <Logo width={200} height={200} fill={randomColor} className={s.about__image} />
+          <Logo
+            data-testid="react-svg"
+            width={200}
+            height={200}
+            fill={randomColor}
+            className={s.about__image}
+          />
           <Button className={s.about__btn} rounded type="button" onClick={generateColor}>
             Set color
           </Button>
