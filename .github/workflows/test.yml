@@ -31,8 +31,6 @@ jobs:
         node-version: [ 14.x ]
     name: Running ESLint on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
-    env:
-      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
