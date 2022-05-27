@@ -1,0 +1,29 @@
+name: Test
+on: [push, pull_request]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ ubuntu-20.04 ]
+        node-version: [ 14.x ]
+    ...
+    # Running tests
+    name: Running Tests on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    env:
+      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install packages
+          run: |
+            npm install
+      - name: Run Test
+        run: npm run test
+      - name: Upload code coverage to codecov
+        uses: codecov/codecov-action@v3
