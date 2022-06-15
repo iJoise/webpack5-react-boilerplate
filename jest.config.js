@@ -9,7 +9,7 @@ module.exports = {
   },
   testEnvironment: "jest-environment-jsdom",
   roots: ["<rootDir>/src"],
-  moduleDirectories: ["node_modules", "app"],
+  moduleDirectories: ["node_modules"],
   setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"],
   collectCoverageFrom: [
     "src/**/*.{js,jsx,ts,tsx}",
